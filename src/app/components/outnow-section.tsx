@@ -21,11 +21,11 @@ interface Song {
 const songs: Song[] = [
   {
     id: "1",
-    title: "Before The Deal ",
+    title: "Hit it in ",
     description:
-      "A cosmic journey through raw emotions and stellar beats. This track showcases Jae Kush ability to blend street narratives with otherworldly production, creating an atmosphere that's both grounded and transcendent.",
-    youtubeUrl: "https://youtu.be/eOE_-O6Z2Zo?si=mkvY-uFJ-RU5XonW",
-    thumbnail: "/mars.jpg",
+      "A cosmic journey through raw emotions and stellar beats. This track showcases Louie Z ability to blend street narratives with otherworldly production, creating an atmosphere that's both grounded and transcendent.",
+    youtubeUrl: "https://youtu.be/CD99EPeZco8?si=gye-8sdJoHsFe21r",
+    thumbnail: "/song1.jpg",
     duration: "3:42",
     releaseDate: "2024",
     genre: "Hip-Hop",
@@ -33,11 +33,11 @@ const songs: Song[] = [
   },
   {
     id: "2",
-    title: "Even Wit Yo Gun",
+    title: "The New Me",
     description:
-      "Unapologetic and fierce, this track embodies the raw energy that defines Jae Kush's sound. With hard-hitting lyrics and an infectious beat, it's a statement piece that demands attention and respect.",
-    youtubeUrl: "https://youtu.be/-QRAIaMsqJk?si=XSZvXMjxDiyBuQhZ",
-    thumbnail: "/wtf.jpg",
+      "Unapologetic and fierce, this track embodies the raw energy that defines Louie Z's sound. With hard-hitting lyrics and an infectious beat, it's a statement piece that demands attention and respect.",
+    youtubeUrl: "https://youtu.be/BAowajgB5o0?si=GxM6pmrEQwhH9Yrk",
+    thumbnail: "/song2.jpg",
     duration: "2:58",
     releaseDate: "2024",
     genre: "Trap",
@@ -45,11 +45,11 @@ const songs: Song[] = [
   },
   {
     id: "3",
-    title: "Go Remix",
+    title: "Fatal",
     description:
-      "A declaration of serious intent and unwavering dedication. This track perfectly captures the essence of Jae Kush grind mentality, delivering powerful verses over a commanding instrumental that leaves no doubt about His commitment to excellence.",
-    youtubeUrl: "https://youtu.be/2wQame1ZgPQ?si=bPjgjkimdi3j1zma",
-    thumbnail: "/aint-come.jpg",
+      "A declaration of serious intent and unwavering dedication. This track perfectly captures the essence of Louie Zgrind mentality, delivering powerful verses over a commanding instrumental that leaves no doubt about His commitment to excellence.",
+    youtubeUrl: "https://youtu.be/c1F_NDXODxo?si=71n_RqLbY4HzMkzj",
+    thumbnail: "/song3.jpg",
     duration: "4:15",
     releaseDate: "2024",
     genre: "Hip-Hop",
@@ -96,15 +96,14 @@ export default function OutNowSection() {
   }
 
   return (
-    <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 md:px-12 bg-gradient-to-br from-gray-950 via-slate-900 to-black relative overflow-hidden">
-      {/* Background Effects */}
+    <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 md:px-12 bg-gradient-to-r from-black via-purple-950 to-black relative overflow-hidden">
       <div className="absolute inset-0 z-0">
-        {/* Animated Gradient Orbs */}
+        {/* Animated Gradient Orbs with enhanced neon colors */}
         <motion.div
-          className="absolute top-1/4 right-1/4 w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 bg-gradient-to-r from-purple-600/15 via-blue-600/15 to-cyan-500/15 rounded-full blur-3xl"
+          className="absolute top-1/4 right-1/4 w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 bg-gradient-to-r from-purple-500/25 via-cyan-500/20 to-blue-500/25 rounded-full blur-3xl"
           animate={{
             scale: [1, 1.2, 1],
-            opacity: [0.2, 0.4, 0.2],
+            opacity: [0.3, 0.6, 0.3],
             x: [0, 30, 0],
             y: [0, -20, 0],
           }}
@@ -115,10 +114,10 @@ export default function OutNowSection() {
           }}
         />
         <motion.div
-          className="absolute bottom-1/4 left-1/4 w-56 h-56 sm:w-72 sm:h-72 md:w-80 md:h-80 bg-gradient-to-r from-pink-600/15 via-purple-600/15 to-indigo-600/15 rounded-full blur-3xl"
+          className="absolute bottom-1/4 left-1/4 w-56 h-56 sm:w-72 sm:h-72 md:w-80 md:h-80 bg-gradient-to-r from-pink-500/25 via-purple-500/20 to-indigo-500/25 rounded-full blur-3xl"
           animate={{
             scale: [1.1, 1, 1.1],
-            opacity: [0.3, 0.5, 0.3],
+            opacity: [0.4, 0.7, 0.4],
             x: [0, -25, 0],
             y: [0, 25, 0],
           }}
@@ -130,8 +129,26 @@ export default function OutNowSection() {
           }}
         />
 
-        {/* Premium Grid Pattern */}
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.008)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.008)_1px,transparent_1px)] bg-[size:40px_40px] sm:bg-[size:60px_60px]" />
+        {/* Additional neon accent orbs */}
+        <motion.div
+          className="absolute top-1/2 left-1/2 w-32 h-32 sm:w-48 sm:h-48 bg-gradient-to-r from-cyan-400/20 to-purple-400/20 rounded-full blur-2xl"
+          animate={{
+            scale: [0.8, 1.3, 0.8],
+            opacity: [0.2, 0.5, 0.2],
+            rotate: [0, 180, 360],
+          }}
+          transition={{
+            duration: 20,
+            repeat: Number.POSITIVE_INFINITY,
+            ease: "linear",
+          }}
+        />
+
+        {/* Enhanced grid pattern with neon glow */}
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(139,69,255,0.015)_1px,transparent_1px),linear-gradient(90deg,rgba(139,69,255,0.015)_1px,transparent_1px)] bg-[size:40px_40px] sm:bg-[size:60px_60px]" />
+
+        {/* Subtle neon border glow */}
+        <div className="absolute inset-0 bg-gradient-to-r from-purple-500/5 via-transparent to-cyan-500/5" />
       </div>
 
       <div className="max-w-7xl mx-auto relative z-10">
@@ -144,32 +161,42 @@ export default function OutNowSection() {
           variants={containerVariants}
         >
           <motion.div
-            className="inline-flex items-center gap-2 sm:gap-3 px-4 sm:px-6 py-2 sm:py-3 rounded-full bg-gradient-to-r from-purple-500/10 via-blue-500/10 to-cyan-500/10 backdrop-blur-xl border border-white/10 mb-6 sm:mb-8"
+            className="inline-flex items-center gap-2 sm:gap-3 px-4 sm:px-6 py-2 sm:py-3 rounded-full bg-gradient-to-r from-purple-500/15 via-cyan-500/10 to-blue-500/15 backdrop-blur-xl border border-purple-400/20 shadow-lg shadow-purple-500/10 mb-6 sm:mb-8"
             variants={itemVariants}
           >
-            <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-gradient-to-r from-purple-400 to-cyan-400 rounded-full animate-pulse" />
-            <Music className="w-4 h-4 sm:w-5 sm:h-5 text-purple-400" />
-            <span className="text-xs sm:text-sm font-semibold text-white/90 tracking-wide">Latest Releases</span>
-            <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-full animate-pulse" />
+            <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-gradient-to-r from-purple-400 to-cyan-400 rounded-full animate-pulse shadow-sm shadow-purple-400/50" />
+            <Music className="w-4 h-4 sm:w-5 sm:h-5 text-purple-300" />
+            <span className="text-xs sm:text-sm font-semibold text-white/95 tracking-wide">Latest Releases</span>
+            <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-full animate-pulse shadow-sm shadow-cyan-400/50" />
           </motion.div>
 
           <motion.h2
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black mb-6 sm:mb-8 tracking-tight"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black mb-6 sm:mb-8 tracking-tight relative"
             variants={itemVariants}
           >
-            <span className="text-white">OUT</span>{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-blue-500 to-cyan-400">
-              NOW
+            <span className="text-white drop-shadow-2xl">OUT</span>{" "}
+            <span className="relative inline-block">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-300 via-cyan-300 to-blue-300 drop-shadow-2xl">
+                NOW
+              </span>
+              {/* Neon glow effect */}
+              <span className="absolute inset-0 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-cyan-400 to-blue-400 blur-sm opacity-70">
+                NOW
+              </span>
+              {/* Outer glow */}
+              <span className="absolute inset-0 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-cyan-500 to-blue-500 blur-lg opacity-40">
+                NOW
+              </span>
             </span>
           </motion.h2>
 
           <motion.p
-            className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/70 max-w-4xl mx-auto leading-relaxed font-medium px-4"
+            className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/80 max-w-4xl mx-auto leading-relaxed font-medium px-4"
             variants={itemVariants}
           >
-            Experience the latest from Blac Ruby's musical journey.
+            Experience the latest from Louie Z's musical journey.
             <br className="hidden sm:block" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400 font-semibold">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-cyan-400 font-semibold drop-shadow-sm">
               Each track tells a story of dedication, passion, and street elegance.
             </span>
           </motion.p>
@@ -177,7 +204,7 @@ export default function OutNowSection() {
 
         {/* Songs Grid - Fully Responsive */}
         <motion.div
-          className="space-y-6 sm:space-y-8"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.1 }}
@@ -191,158 +218,46 @@ export default function OutNowSection() {
               onHoverStart={() => setHoveredSong(song.id)}
               onHoverEnd={() => setHoveredSong(null)}
             >
-              <div className="relative bg-gradient-to-br from-white/8 via-white/[0.03] to-transparent backdrop-blur-2xl border border-white/15 rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 lg:p-12 hover:border-white/25 hover:from-white/10 transition-all duration-700 overflow-hidden shadow-2xl shadow-black/20">
-                {/* Premium Hover Effect Background */}
-                <div className="absolute inset-0 bg-gradient-to-br from-purple-500/8 via-blue-500/8 to-cyan-500/8 rounded-2xl sm:rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+              <Link href={song.youtubeUrl} target="_blank" rel="noopener noreferrer">
+                <motion.div
+                  className="relative h-96 md:h-[28rem] lg:h-96 rounded-2xl overflow-hidden cursor-pointer shadow-2xl shadow-black/40"
+                  whileHover={{ scale: 1.02, y: -8 }}
+                  whileTap={{ scale: 0.98 }}
+                  transition={{ duration: 0.3, ease: "easeOut" }}
+                >
+                  {/* Background Image with dull-to-beautiful effect */}
+                  <div className="absolute inset-0">
+                    <img
+                      src={song.thumbnail || "/placeholder.svg?height=600&width=400&query=music album cover"}
+                      alt={`${song.title} cover art`}
+                      className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 group-hover:brightness-125 group-hover:contrast-125 group-hover:saturate-150 brightness-75 contrast-75 saturate-50"
+                    />
 
-                {/* Subtle Inner Glow */}
-                <div className="absolute inset-0 bg-gradient-to-br from-white/[0.02] to-transparent rounded-2xl sm:rounded-3xl" />
+                    {/* Dull overlay that fades on hover */}
+                    <div className="absolute inset-0 bg-black/50 group-hover:bg-black/20 transition-all duration-700" />
 
-                <div className="relative z-10">
-                  {/* Mobile Layout (< sm) */}
-                  <div className="block sm:hidden space-y-4">
-                    {/* Mobile Header */}
-                    <div className="flex items-center gap-3 mb-4">
-                      <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-cyan-500 rounded-xl flex items-center justify-center shadow-lg shadow-purple-500/25">
-                        <span className="text-white font-bold text-sm">{index + 1}</span>
-                      </div>
-                      <div className="flex-1">
-                        <h3 className="text-2xl font-bold text-white mb-1">{song.title}</h3>
-                        <div className="flex items-center gap-3 text-white/60 text-sm">
-                          <span className="flex items-center gap-1">
-                            <Clock className="w-3 h-3" />
-                            {song.duration}
-                          </span>
-                          <span className="flex items-center gap-1">
-                            <TrendingUp className="w-3 h-3" />
-                            {song.plays}
-                          </span>
-                          <span className="px-2 py-1 bg-white/10 rounded-full text-xs font-medium">{song.genre}</span>
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* Mobile Thumbnail - Clickable */}
-                    <Link href={song.youtubeUrl} target="_blank" rel="noopener noreferrer" className="block">
-                      <motion.div
-                        className="relative aspect-square rounded-xl overflow-hidden bg-gradient-to-br from-purple-500/20 to-cyan-500/20 border border-white/15 shadow-xl shadow-black/30"
-                        whileTap={{ scale: 0.98 }}
-                        transition={{ duration: 0.2 }}
-                      >
-                        <img
-                          src={song.thumbnail || "/placeholder.svg"}
-                          alt={`${song.title} cover art`}
-                          className="w-full h-full object-cover"
-                        />
-
-                        {/* Play Overlay */}
-                        <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-                          <motion.div
-                            className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/30 shadow-lg"
-                            whileHover={{ scale: 1.1 }}
-                            whileTap={{ scale: 0.95 }}
-                          >
-                            <Play className="w-6 h-6 text-white ml-1" />
-                          </motion.div>
-                        </div>
-                      </motion.div>
-                    </Link>
-
-                    {/* Mobile Description */}
-                    <p className="text-white/80 text-sm leading-relaxed">{song.description}</p>
-
-                    {/* Mobile Button */}
-                    <Link href={song.youtubeUrl} target="_blank" rel="noopener noreferrer" className="block">
-                      <Button className="w-full bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white font-semibold py-3 rounded-xl transition-all duration-300 transform active:scale-98">
-                        <Play className="w-4 h-4 mr-2" />
-                        Watch on YouTube
-                        <ExternalLink className="w-4 h-4 ml-2" />
-                      </Button>
-                    </Link>
+                    {/* Gradient overlay for text readability */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
                   </div>
 
-                  {/* Desktop/Tablet Layout (>= sm) */}
-                  <div className="hidden sm:grid sm:grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8 items-center">
-                    {/* Song Info */}
-                    <div className="lg:col-span-2 space-y-4 sm:space-y-6">
-                      <div className="flex items-start justify-between">
-                        <div className="flex-1">
-                          <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4">
-                            <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-purple-500 to-cyan-500 rounded-xl sm:rounded-2xl flex items-center justify-center shadow-lg shadow-purple-500/25">
-                              <span className="text-white font-bold text-sm sm:text-lg">{index + 1}</span>
-                            </div>
-                            <div className="flex-1">
-                              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-1 sm:mb-2">
-                                {song.title}
-                              </h3>
-                              <div className="flex flex-wrap items-center gap-3 sm:gap-4 text-white/60 text-sm sm:text-base">
-                                <span className="flex items-center gap-1 sm:gap-2">
-                                  <Clock className="w-3 h-3 sm:w-4 sm:h-4" />
-                                  {song.duration}
-                                </span>
-                                <span className="flex items-center gap-1 sm:gap-2">
-                                  <TrendingUp className="w-3 h-3 sm:w-4 sm:h-4" />
-                                  {song.plays} plays
-                                </span>
-                                <span className="px-2 sm:px-3 py-1 bg-white/10 rounded-full text-xs sm:text-sm font-medium">
-                                  {song.genre}
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-
-                          <p className="text-white/80 text-sm sm:text-base lg:text-lg leading-relaxed mb-4 sm:mb-6 max-w-2xl">
-                            {song.description}
-                          </p>
-
-                          <Link href={song.youtubeUrl} target="_blank" rel="noopener noreferrer">
-                            <Button className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white font-semibold px-6 sm:px-8 py-4 sm:py-6 text-sm sm:text-lg rounded-xl sm:rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-lg shadow-red-500/25 group/btn">
-                              <Play className="w-4 h-4 sm:w-5 sm:h-5 mr-2 sm:mr-3 group-hover/btn:scale-110 transition-transform" />
-                              Watch on YouTube
-                              <ExternalLink className="w-3 h-3 sm:w-4 sm:h-4 ml-2 sm:ml-3 group-hover/btn:translate-x-1 transition-transform" />
-                            </Button>
-                          </Link>
+                  {/* Content overlay with higher z-index */}
+                  <div className="absolute inset-0 z-10 p-6 flex flex-col justify-between">
+                    {/* Top content */}
+                    <div className="flex items-start justify-between">
+                      <div className="flex items-center gap-2">
+                        <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-cyan-500 rounded-xl flex items-center justify-center shadow-lg">
+                          <span className="text-white font-bold text-sm">{index + 1}</span>
                         </div>
+                        <span className="px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full text-xs font-medium text-white border border-white/20">
+                          {song.genre}
+                        </span>
                       </div>
-                    </div>
-
-                    {/* Song Artwork - Clickable */}
-                    <div className="relative sm:order-first lg:order-last">
-                      <Link href={song.youtubeUrl} target="_blank" rel="noopener noreferrer">
-                        <motion.div
-                          className="relative aspect-square rounded-xl sm:rounded-2xl overflow-hidden bg-gradient-to-br from-purple-500/20 to-cyan-500/20 border border-white/15 shadow-2xl shadow-black/40 cursor-pointer"
-                          whileHover={{ scale: 1.03, rotate: 1 }}
-                          whileTap={{ scale: 0.98 }}
-                          transition={{ duration: 0.3, ease: "easeOut" }}
-                        >
-                          <img
-                            src={song.thumbnail || "/placeholder.svg"}
-                            alt={`${song.title} cover art`}
-                            className="w-full h-full object-cover"
-                          />
-
-                          {/* Premium Play Overlay */}
-                          <motion.div
-                            className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                            initial={{ opacity: 0 }}
-                            whileHover={{ opacity: 1 }}
-                          >
-                            <motion.div
-                              className="w-16 h-16 sm:w-20 sm:h-20 bg-white/15 backdrop-blur-md rounded-full flex items-center justify-center border border-white/30 shadow-2xl"
-                              whileHover={{ scale: 1.1 }}
-                              whileTap={{ scale: 0.95 }}
-                            >
-                              <Play className="w-6 h-6 sm:w-8 sm:h-8 text-white ml-1" />
-                            </motion.div>
-                          </motion.div>
-                        </motion.div>
-                      </Link>
 
                       {/* Floating Music Icon */}
                       <motion.div
-                        className="absolute -top-2 -right-2 sm:-top-4 sm:-right-4 w-6 h-6 sm:w-8 sm:h-8 bg-gradient-to-r from-purple-500 to-cyan-500 rounded-full flex items-center justify-center shadow-lg shadow-purple-500/25"
+                        className="w-6 h-6 bg-gradient-to-r from-purple-500 to-cyan-500 rounded-full flex items-center justify-center shadow-lg"
                         animate={{
-                          y: hoveredSong === song.id ? [-3, 3, -3] : 0,
+                          y: hoveredSong === song.id ? [-2, 2, -2] : 0,
                           rotate: hoveredSong === song.id ? [0, 180, 360] : 0,
                         }}
                         transition={{
@@ -351,12 +266,51 @@ export default function OutNowSection() {
                           ease: "easeInOut",
                         }}
                       >
-                        <Music className="w-3 h-3 sm:w-4 sm:h-4 text-white" />
+                        <Music className="w-3 h-3 text-white" />
                       </motion.div>
                     </div>
+
+                    {/* Center play button */}
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <motion.div
+                        className="w-16 h-16 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center border border-white/30 shadow-2xl opacity-0 group-hover:opacity-100 transition-all duration-300"
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.95 }}
+                      >
+                        <Play className="w-7 h-7 text-white ml-1" />
+                      </motion.div>
+                    </div>
+
+                    {/* Bottom content */}
+                    <div className="space-y-3">
+                      <div className="flex items-center gap-3 text-white/70 text-sm">
+                        <span className="flex items-center gap-1">
+                          <Clock className="w-3 h-3" />
+                          {song.duration}
+                        </span>
+                        <span className="flex items-center gap-1">
+                          <TrendingUp className="w-3 h-3" />
+                          {song.plays}
+                        </span>
+                      </div>
+
+                      <h3 className="text-xl md:text-2xl font-bold text-white leading-tight group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-cyan-400 transition-all duration-300">
+                        {song.title}
+                      </h3>
+
+                      <p className="text-white/80 text-sm leading-relaxed line-clamp-3 group-hover:text-white/90 transition-colors duration-300">
+                        {song.description}
+                      </p>
+
+                      <Button className="w-full bg-gradient-to-r from-red-600/90 to-red-500/90 hover:from-red-600 hover:to-red-500 text-white font-semibold py-3 text-sm rounded-xl transition-all duration-300 backdrop-blur-sm border border-red-500/20 shadow-lg shadow-red-500/25 group-hover:shadow-red-500/40">
+                        <Play className="w-4 h-4 mr-2" />
+                        Watch on YouTube
+                        <ExternalLink className="w-4 h-4 ml-2" />
+                      </Button>
+                    </div>
                   </div>
-                </div>
-              </div>
+                </motion.div>
+              </Link>
             </motion.div>
           ))}
         </motion.div>
@@ -374,20 +328,18 @@ export default function OutNowSection() {
               More Music Coming Soon
             </h3>
             <p className="text-white/70 text-sm sm:text-base lg:text-lg mb-6 sm:mb-8 max-w-2xl mx-auto leading-relaxed">
-              Stay tuned for more releases from Jae Kush. Follow on social media to be the first to know when new
-              tracks drop.
+              Stay tuned for more releases from Louie Z. Follow on social media to be the first to know when new tracks
+              drop.
             </p>
-            <div  className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
-             <a
-  href="https://youtube.com/@tharealjaekush?si=W_FnsBvPdhhQQNyh" 
-  target="_blank" 
-  rel="noopener noreferrer"
-  className="bg-gradient-to-r from-purple-500 to-cyan-500 hover:from-purple-600 hover:to-cyan-600 text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-xl sm:rounded-2xl text-sm sm:text-base inline-block"
->
-  Subscribe on YouTube
-</a>
-
-             
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
+              <a
+                href="https://youtube.com/@lzloudlyvisuals?si=8P22WsSnrvIMPBPy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gradient-to-r from-purple-500 to-cyan-500 hover:from-purple-600 hover:to-cyan-600 text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-xl sm:rounded-2xl text-sm sm:text-base inline-block"
+              >
+                Subscribe on YouTube
+              </a>
             </div>
           </div>
         </motion.div>

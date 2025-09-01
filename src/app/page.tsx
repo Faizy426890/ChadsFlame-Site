@@ -262,8 +262,8 @@ export default function BlacRubyPortfolio() {
         {/* Hero Section */}
         <HeroSection />
         <AboutSection /> 
-        <SocialSection />
-
+        <SocialSection /> 
+        <OutNowSection />
         {/* Enhanced Bio Section with Dark Grid Background */}
         {/* <section
           id="bio"

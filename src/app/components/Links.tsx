@@ -53,13 +53,13 @@ export default function SocialSection() {
   return (
     <section id="socials" className="py-32 px-4 md:px-8 bg-black relative overflow-hidden">
       {/* Animated gradient background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-black"></div>
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,rgba(236,72,153,0.15),transparent_70%)] animate-pulse"></div>
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(6,182,212,0.12),transparent_70%)] animate-pulse delay-1000"></div>
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_40%_80%,rgba(16,185,129,0.1),transparent_70%)] animate-pulse delay-2000"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-black via-black to-black"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,rgba(255, 96, 175, 0.15),transparent_70%)] animate-pulse"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(3, 60, 70, 0.12),transparent_70%)] animate-pulse delay-1000"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_40%_80%,rgba(10, 124, 86, 0.1),transparent_70%)] animate-pulse delay-2000"></div>
       
       {/* Grid pattern overlay */}
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:50px_50px]"></div>
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(2, 1, 1, 0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(0, 0, 0, 0.02)_1px,transparent_1px)] bg-[size:50px_50px]"></div>
 
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Header */}
@@ -87,7 +87,7 @@ export default function SocialSection() {
               style={{ animationDelay: `${index * 200}ms` }}
             >
               <Link href={platform.url} target="_blank" rel="noopener noreferrer" className="block">
-                <div className={`relative overflow-hidden rounded-3xl  bg-black/30 backdrop-blur-1xl border border-white/20 hover:border-white/20 transition-all duration-700 hover:scale-105 relative overflow-hidden shadow-2xl shadow-cyan-500/50 hover:shadow-cyan-500/50 group backdrop-blur-1xl border border-white/30 transition-all duration-700 hover:-translate-y-2 hover:scale-[1.02] p-6 md:p-8 h-full shadow-sm ${platform.glowColor} hover:shadow-2xl ${platform.borderGlow} hover:border-gray-20/80 group-hover:bg-black/30`}>
+                <div className={`relative overflow-hidden rounded-3xl  bg-black/30 opacity-90 backdrop-blur-2xl border border-white/20 hover:border-white/20 transition-all duration-700 hover:scale-105 relative overflow-hidden shadow-2xl shadow-cyan-500/50 hover:shadow-cyan-500/50 group backdrop-blur-2xl border border-white/30 transition-all duration-700 hover:-translate-y-2 hover:scale-[1.02] p-6 md:p-8 h-full shadow-2xl ${platform.glowColor} hover:shadow-2xl ${platform.borderGlow} hover:border-gray-20/80 group-hover:bg-black/30`}>
                   {/* Neon border glow */}
                   <div className={`absolute inset-0 rounded-3xl bg-gradient-to-r ${platform.color} opacity-0 group-hover:opacity-15 transition-opacity duration-700 blur-2xl`}></div>
                   {/* Glassy inner glow */}
@@ -97,13 +97,13 @@ export default function SocialSection() {
                   <div className="relative z-10">
                     {/* Platform Header */}
                     <div className="flex items-center gap-4 lg:gap-5 mb-6">
-                      <div className={`w-14 h-14 lg:w-16 lg:h-16 rounded-2xl bg-gradient-to-br ${platform.color} shadow-2xl ${platform.glowColor} flex items-center justify-center group-hover:scale-110 transition-all duration-500 relative backdrop-blur-1xl`}>
+                      <div className={`w-14 h-14 lg:w-16 lg:h-16 rounded-2xl bg-gradient-to-br ${platform.color} shadow-2xl ${platform.glowColor} flex items-center justify-center group-hover:scale-110 transition-all duration-500 relative backdrop-blur-2xl`}>
                         <div className={`absolute inset-0 rounded-2xl bg-gradient-to-br ${platform.color} opacity-80`}></div>
                         <div className="absolute inset-0 rounded-2xl bg-white/5 backdrop-blur-xl"></div>
                         <platform.icon className="h-7 w-7 lg:h-8 lg:w-8 text-white relative z-10" />
                       </div>
                       <div className="flex-1 min-w-0">
-                        <h3 className="text-xl lg:text-2xl font-bold text-white mb-1 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-gray-200 group-hover:bg-clip-text transition-all duration-500 truncate">
+                        <h3 className="text-xl lg:text-2xl font-bold text-white mb-1 text-transparent bg-gradient-to-r from-white to-gray-200 bg-clip-text transition-all duration-500 truncate">
                           {platform.name}
                         </h3>
                         <p className="text-gray-400 text-sm lg:text-base group-hover:text-gray-300 transition-colors duration-300 truncate">

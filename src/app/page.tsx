@@ -9,7 +9,7 @@ import ContactSection from "./components/contact-section"
 import HeroSection from "./components/Hero-section"
 import OutNowSection from "./components/outnow-section"
 import { useState, useEffect } from "react" 
-import { SocialMediaLinks } from "./components/Links"
+import SocialSection from "./components/Links"
 import AboutSection from "./components/About"
 
 export default function BlacRubyPortfolio() {
@@ -262,7 +262,7 @@ export default function BlacRubyPortfolio() {
         {/* Hero Section */}
         <HeroSection />
         <AboutSection /> 
-        <SocialMediaLinks />
+        <SocialSection />
 
         {/* Enhanced Bio Section with Dark Grid Background */}
         {/* <section

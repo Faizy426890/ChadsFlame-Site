@@ -89,7 +89,7 @@ export default function SocialSection() {
               <Link href={platform.url} target="_blank" rel="noopener noreferrer" className="block">
              <div
   className={`relative overflow-hidden rounded-3xl 
-              bg-gray-300/90
+              bg-gray-100/90
               backdrop-blur-2xl 
               border border-white/20 hover:border-white/30 
               transition-all duration-700 

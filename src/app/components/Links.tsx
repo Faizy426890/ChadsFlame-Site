@@ -87,7 +87,7 @@ export default function SocialSection() {
               style={{ animationDelay: `${index * 200}ms` }}
             >
               <Link href={platform.url} target="_blank" rel="noopener noreferrer" className="block">
-                <div className={`relative overflow-hidden rounded-3xl  bg-black/30 backdrop-blur-1xl border border-white/20 hover:border-white/20 transition-all duration-700 hover:scale-105 relative overflow-hidden shadow-2xl shadow-cyan-500/50 hover:shadow-cyan-500/50 group backdrop-blur-1xl border border-white/30 transition-all duration-700 hover:-translate-y-2 hover:scale-[1.02] p-6 md:p-8 h-full shadow-2xl ${platform.glowColor} hover:shadow-2xl ${platform.borderGlow} hover:border-gray-20/80 group-hover:bg-black/30`}>
+                <div className={`relative overflow-hidden rounded-3xl  bg-black/30 backdrop-blur-1xl border border-white/20 hover:border-white/20 transition-all duration-700 hover:scale-105 relative overflow-hidden shadow-2xl shadow-cyan-500/50 hover:shadow-cyan-500/50 group backdrop-blur-1xl border border-white/30 transition-all duration-700 hover:-translate-y-2 hover:scale-[1.02] p-6 md:p-8 h-full shadow-sm ${platform.glowColor} hover:shadow-2xl ${platform.borderGlow} hover:border-gray-20/80 group-hover:bg-black/30`}>
                   {/* Neon border glow */}
                   <div className={`absolute inset-0 rounded-3xl bg-gradient-to-r ${platform.color} opacity-0 group-hover:opacity-15 transition-opacity duration-700 blur-2xl`}></div>
                   {/* Glassy inner glow */}
@@ -131,7 +131,7 @@ export default function SocialSection() {
                       <Button
                         variant="ghost"
                         size="sm"
-                        className={`bg-gradient-to-r ${platform.color} text-white hover:scale-110 transition-all duration-500 border-0 font-bold px-4 lg:px-6 py-2 lg:py-3 rounded-xl shadow-xl ${platform.glowColor} hover:shadow-2xl relative overflow-hidden group/btn backdrop-blur-xl`}
+                        className={`bg-gradient-to-r ${platform.color} text-white hover:scale-110 transition-all duration-500 border-0 font-bold px-4 lg:px-6 py-2 lg:py-3 rounded-xl shadow-md ${platform.glowColor} hover:shadow-2xl relative overflow-hidden group/btn backdrop-blur-xl`}
                       >
                         <span className="absolute inset-0 bg-white/30 rounded-xl opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300"></span>
                         <span className="relative z-10 text-sm lg:text-base">

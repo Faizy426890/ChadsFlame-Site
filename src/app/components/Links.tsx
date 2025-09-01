@@ -87,7 +87,19 @@ export default function SocialSection() {
               style={{ animationDelay: `${index * 200}ms` }}
             >
               <Link href={platform.url} target="_blank" rel="noopener noreferrer" className="block">
-                <div className={`relative overflow-hidden rounded-3xl  bg-black/30 opacity-90 backdrop-blur-2xl border border-white/20 hover:border-white/20 transition-all duration-700 hover:scale-105 relative overflow-hidden shadow-2xl shadow-cyan-500/50 hover:shadow-cyan-500/50 group backdrop-blur-2xl border border-white/30 transition-all duration-700 hover:-translate-y-2 hover:scale-[1.02] p-6 md:p-8 h-full shadow-2xl ${platform.glowColor} hover:shadow-2xl ${platform.borderGlow} hover:border-gray-20/80 group-hover:bg-black/30`}>
+             <div
+  className={`relative overflow-hidden rounded-3xl 
+              bg-gray-300/90
+              backdrop-blur-2xl 
+              border border-white/20 hover:border-white/30 
+              transition-all duration-700 
+              hover:scale-105 hover:-translate-y-2 
+              shadow-2xl shadow-cyan-500/30 hover:shadow-cyan-500/50 
+              group p-6 md:p-8 h-full 
+              ${platform.glowColor} ${platform.borderGlow}`}
+>
+
+
                   {/* Neon border glow */}
                   <div className={`absolute inset-0 rounded-3xl bg-gradient-to-r ${platform.color} opacity-0 group-hover:opacity-15 transition-opacity duration-700 blur-2xl`}></div>
                   {/* Glassy inner glow */}
@@ -103,25 +115,25 @@ export default function SocialSection() {
                         <platform.icon className="h-7 w-7 lg:h-8 lg:w-8 text-white relative z-10" />
                       </div>
                       <div className="flex-1 min-w-0">
-                        <h3 className="text-xl lg:text-2xl font-bold text-white mb-1 text-transparent bg-gradient-to-r from-white to-gray-200 bg-clip-text transition-all duration-500 truncate">
+                        <h3 className="text-xl lg:text-2xl font-bold text-black mb-1 text-transparent bg-gradient-to-r from-black to-gray-900 bg-clip-text transition-all duration-500 truncate">
                           {platform.name}
                         </h3>
-                        <p className="text-gray-400 text-sm lg:text-base group-hover:text-gray-300 transition-colors duration-300 truncate">
+                        <p className="text-gray-900 text-sm lg:text-base group-hover:text-gray-700 transition-colors duration-300 truncate">
                           {platform.handle}
                         </p>
                       </div>
-                      <ExternalLink className="h-5 w-5 lg:h-6 lg:w-6 text-gray-600 group-hover:text-white transition-all duration-300 group-hover:scale-110 flex-shrink-0" />
+                      <ExternalLink className="h-5 w-5 lg:h-6 lg:w-6 text-gray-900 group-hover:text-graY-800 transition-all duration-300 group-hover:scale-110 flex-shrink-0" />
                     </div>
 
                     {/* Description */}
-                    <p className="text-gray-400 text-sm lg:text-base mb-6 lg:mb-8 leading-relaxed group-hover:text-gray-200 transition-colors duration-300 line-clamp-2">
+                    <p className="text-gray-800 text-sm lg:text-base mb-6 lg:mb-8 leading-relaxed group-hover:text-gray-900 transition-colors duration-300 line-clamp-2">
                       {platform.description}
                     </p>
 
                     {/* Stats and CTA */}
                     <div className="flex items-center justify-between gap-4">
                       <div className="space-y-1">
-                        <div className="text-2xl lg:text-3xl font-black text-white group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-gray-200 group-hover:bg-clip-text transition-all duration-500">
+                        <div className="text-2xl lg:text-3xl font-black text-gray-700 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-gray-200 group-hover:bg-clip-text transition-all duration-500">
                           {platform.followers}
                         </div>
                         <div className="text-xs lg:text-sm text-gray-500 uppercase tracking-widest font-medium">
@@ -150,12 +162,11 @@ export default function SocialSection() {
         <div className="text-center mb-16 animate-in fade-in slide-in-from-bottom-10 duration-1000 delay-700 px-4">
           <div className="inline-flex flex-col sm:flex-row items-center gap-8 sm:gap-12 lg:gap-16 px-8 sm:px-12 lg:px-16 py-8 lg:py-10 rounded-3xl bg-white/5 backdrop-blur-2xl border border-white/10 hover:border-white/20 transition-all duration-700 hover:scale-105 relative overflow-hidden shadow-2xl shadow-cyan-500/20 hover:shadow-cyan-500/40 group max-w-2xl mx-auto">
             {/* Neon border glow */}
-            <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-cyan-500 via-fuchsia-500 to-emerald-500 opacity-0 group-hover:opacity-25 transition-opacity duration-700 blur-2xl"></div>
-            <div className="absolute inset-0 rounded-3xl border border-transparent bg-gradient-to-r from-cyan-500 via-fuchsia-500 to-emerald-500 bg-clip-border opacity-0 group-hover:opacity-40 transition-opacity duration-700"></div>
+            {/* <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-cyan-500 via-fuchsia-500 to-emerald-500 opacity-0 group-hover:opacity-25 transition-opacity duration-700 blur-2xl"></div> */}
             
             {/* Glassy overlay */}
-            <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-white/20 via-transparent to-white/10"></div>
-            <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/40 to-transparent"></div>
+            <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-white/10 via-transparent to-white/5"></div>
+            <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
             
             <div className="flex items-center gap-4 lg:gap-5 relative z-10">
               <div className="w-12 h-12 lg:w-14 lg:h-14 rounded-2xl bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center shadow-2xl shadow-cyan-500/50 group-hover:shadow-cyan-500/80 transition-all duration-500 backdrop-blur-xl border border-white/20">

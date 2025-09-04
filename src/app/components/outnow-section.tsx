@@ -10,12 +10,14 @@ interface Song {
   id: string
   title: string
   description: string
-  youtubeUrl: string
+  youtubeUrl?: string
+  spotifyUrl?: string
   thumbnail: string
   duration: string
   releaseDate: string
   genre: string
   plays: string
+  platform: "youtube" | "spotify"
 }
 
 const songs: Song[] = [
@@ -30,6 +32,7 @@ const songs: Song[] = [
     releaseDate: "2024",
     genre: "Hip-Hop",
     plays: "15.2K",
+    platform: "youtube",
   },
   {
     id: "2",
@@ -42,6 +45,7 @@ const songs: Song[] = [
     releaseDate: "2024",
     genre: "Trap",
     plays: "22.8K",
+    platform: "youtube",
   },
   {
     id: "3",
@@ -54,6 +58,46 @@ const songs: Song[] = [
     releaseDate: "2024",
     genre: "Hip-Hop",
     plays: "31.5K",
+    platform: "youtube",
+  },
+  {
+    id: "4",
+    title: "Jump",
+    description:
+      "A cosmic journey through raw emotions and stellar beats. This track showcases Louie Z ability to blend street narratives with otherworldly production, creating an atmosphere that's both grounded and transcendent.",
+    spotifyUrl: "https://open.spotify.com/album/4YBAiedHxwC2vhFEWO9HKS?si=eqZShNXeSwagSwO_A4wa2w",
+    thumbnail: "https://www.shutterstock.com/image-photo/guitar-player-making-rock-during-600nw-2239049561.jpg",
+    duration: "3:42",
+    releaseDate: "2024",
+    genre: "Hip-Hop",
+    plays: "15.2K",
+    platform: "spotify",
+  },
+  {
+    id: "5",
+    title: "Angels & Demons",
+    description:
+      "Unapologetic and fierce, this track embodies the raw energy that defines Louie Z's sound. With hard-hitting lyrics and an infectious beat, it's a statement piece that demands attention and respect.",
+    spotifyUrl: "https://open.spotify.com/album/2qTycbPbFCPEU19UfKzzAq?si=0qsFxKZgRfGhr9ZleOiRtw",
+    thumbnail: "https://www.shutterstock.com/image-photo/view-stage-stadium-vocalist-popular-600nw-1668317131.jpg",
+    duration: "2:58",
+    releaseDate: "2024",
+    genre: "Trap",
+    plays: "22.8K",
+    platform: "spotify",
+  },
+  {
+    id: "6",
+    title: "Champagne",
+    description:
+      "A declaration of serious intent and unwavering dedication. This track perfectly captures the essence of Louie Zgrind mentality, delivering powerful verses over a commanding instrumental that leaves no doubt about His commitment to excellence.",
+    spotifyUrl: "https://open.spotify.com/album/5ensD3bkxruCifpvDRtHQ3?si=_jaiwbneSKC309KN-ubI3A",
+    thumbnail: "https://c1.wallpaperflare.com/preview/448/284/997/dark-night-party-concert.jpg",
+    duration: "4:15",
+    releaseDate: "2024",
+    genre: "Hip-Hop",
+    plays: "31.5K",
+    platform: "spotify",
   },
 ]
 
@@ -218,7 +262,11 @@ export default function OutNowSection() {
               onHoverStart={() => setHoveredSong(song.id)}
               onHoverEnd={() => setHoveredSong(null)}
             >
-              <Link href={song.youtubeUrl} target="_blank" rel="noopener noreferrer">
+              <Link
+                href={song.platform === "youtube" ? song.youtubeUrl! : song.spotifyUrl!}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <motion.div
                   className="relative h-96 md:h-[28rem] lg:h-96 rounded-2xl overflow-hidden cursor-pointer shadow-2xl shadow-black/40"
                   whileHover={{ scale: 1.02, y: -8 }}
@@ -302,9 +350,15 @@ export default function OutNowSection() {
                         {song.description}
                       </p>
 
-                      <Button className="w-full bg-gradient-to-r from-red-600/90 to-red-500/90 hover:from-red-600 hover:to-red-500 text-white font-semibold py-3 text-sm rounded-xl transition-all duration-300 backdrop-blur-sm border border-red-500/20 shadow-lg shadow-red-500/25 group-hover:shadow-red-500/40">
+                      <Button
+                        className={`w-full ${
+                          song.platform === "youtube"
+                            ? "bg-gradient-to-r from-red-600/90 to-red-500/90 hover:from-red-600 hover:to-red-500 border-red-500/20 shadow-red-500/25 group-hover:shadow-red-500/40"
+                            : "bg-gradient-to-r from-green-600/90 to-green-500/90 hover:from-green-600 hover:to-green-500 border-green-500/20 shadow-green-500/25 group-hover:shadow-green-500/40"
+                        } text-white font-semibold py-3 text-sm rounded-xl transition-all duration-300 backdrop-blur-sm border shadow-lg`}
+                      >
                         <Play className="w-4 h-4 mr-2" />
-                        Watch on YouTube
+                        {song.platform === "youtube" ? "Watch on YouTube" : "Listen on Spotify"}
                         <ExternalLink className="w-4 h-4 ml-2" />
                       </Button>
                     </div>

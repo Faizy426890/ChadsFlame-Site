@@ -65,13 +65,13 @@ const songs: Song[] = [
     title: "Jump",
     description:
       "A cosmic journey through raw emotions and stellar beats. This track showcases Louie Z ability to blend street narratives with otherworldly production, creating an atmosphere that's both grounded and transcendent.",
-    spotifyUrl: "https://open.spotify.com/album/4YBAiedHxwC2vhFEWO9HKS?si=eqZShNXeSwagSwO_A4wa2w",
+    youtubeUrl: "https://www.youtube.com/watch?v=N5vFNJBKd8w",
     thumbnail: "https://www.shutterstock.com/image-photo/guitar-player-making-rock-during-600nw-2239049561.jpg",
     duration: "3:42",
     releaseDate: "2024",
     genre: "Hip-Hop",
     plays: "15.2K",
-    platform: "spotify",
+    platform: "youtube",
   },
   {
     id: "5",

@@ -24,18 +24,18 @@ export default function SocialSection() {
       glowColor: "shadow-red-500/50",
       borderGlow: "group-hover:shadow-red-500/60",
     },
-    {
-      name: "Instagram",
-      url: "https://www.instagram.com/louiezartists?igsh=MW5kZWUydGlsZnZ1dw==",
-      icon: Instagram,
-      color: "from-fuchsia-500 to-pink-600",
-      stats: "Behind the Scenes",
-      handle: "@louiezartists",
-      description: "Daily life, studio sessions & exclusive content",
-      followers: "28K",
-      glowColor: "shadow-fuchsia-500/50",
-      borderGlow: "group-hover:shadow-fuchsia-500/60",
-    },
+    // {
+    //   name: "Instagram",
+    //   url: "https://www.instagram.com/louiezartists?igsh=MW5kZWUydGlsZnZ1dw==",
+    //   icon: Instagram,
+    //   color: "from-fuchsia-500 to-pink-600",
+    //   stats: "Behind the Scenes",
+    //   handle: "@louiezartists",
+    //   description: "Daily life, studio sessions & exclusive content",
+    //   followers: "28K",
+    //   glowColor: "shadow-fuchsia-500/50",
+    //   borderGlow: "group-hover:shadow-fuchsia-500/60",
+    // },
     {
       name: "Spotify",
       url: "https://open.spotify.com/artist/0Z3WN6svAClDBpfbk2HLz8?si=PnlfQUGdRAS7SAGK18Jlog",
@@ -198,7 +198,7 @@ export default function SocialSection() {
             Stay updated with new releases, shows, and exclusive content
           </p>
           <div className="flex flex-col sm:flex-row gap-6 lg:gap-8 justify-center items-center px-4">
-            <Button
+            {/* <Button
               asChild
               className="bg-gradient-to-r from-fuchsia-600 via-pink-600 to-fuchsia-600 hover:from-fuchsia-500 hover:via-pink-500 hover:to-fuchsia-500 text-white px-8 sm:px-12 lg:px-16 py-4 lg:py-6 rounded-2xl font-black text-base lg:text-lg transition-all duration-700 hover:scale-110 hover:shadow-2xl shadow-fuchsia-500/60 border border-fuchsia-500/50 hover:border-fuchsia-400 relative overflow-hidden group backdrop-blur-xl w-full sm:w-auto"
             >
@@ -207,7 +207,7 @@ export default function SocialSection() {
                 <span className="absolute -inset-2 bg-gradient-to-r from-fuchsia-500 to-pink-500 rounded-3xl opacity-0 group-hover:opacity-30 blur-xl transition-opacity duration-700"></span>
                 <span className="relative z-10 uppercase tracking-wider">Follow Instagram</span>
               </Link>
-            </Button>
+            </Button> */}
             
             <Button
               asChild
